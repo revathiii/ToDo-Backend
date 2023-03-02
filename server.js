@@ -10,9 +10,7 @@ app.use(cors());
 mongoose.connect('mongodb://127.0.0.1:27017/react-todo', {
 	useNewUrlParser: true, 
 	useUnifiedTopology: true 
-})
-	.then(() => console.log("Connected to MongoDB"))
-	.catch(console.error);
+}).then(() => console.log("Connected to MongoDB")).catch(console.error);
 
 // Models
 const Todo = require('./models/Todo');
@@ -59,4 +57,4 @@ app.put('/todo/update/:id', async (req, res) => {
 	res.json(todo);
 });
 
-app.listen(3001,()=>console.log("server started on port 3001"));
+app.listen(3001,() => console.log("port 3001"));

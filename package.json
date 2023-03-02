@@ -4,7 +4,8 @@
   "description": "My ToDo List App",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon server.js"
+    "start":"nodemon server.js",
+    "build":"npm i"
   },
   "author": "Revathi",
   "license": "ISC",
